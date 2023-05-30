@@ -1,5 +1,7 @@
 ## UI-UX Poject using TypeScript
 
+Project Hosted [here](https://thefirstock-uiux.vercel.app/)!
+
 ### `npm install && npm start`
 
 Runs the app in the development mode.\
