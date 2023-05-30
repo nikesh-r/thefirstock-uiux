@@ -1,0 +1,17 @@
+@import "./variables.module.scss";
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 1rem 0.5rem;
+
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: $cardShadow;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    height: auto;
+  }
+}

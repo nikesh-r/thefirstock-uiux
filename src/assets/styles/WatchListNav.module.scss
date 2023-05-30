@@ -1,0 +1,60 @@
+@import "./variables.module.scss";
+
+.watchList {
+  height: 100%;
+  padding: 0rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.watchListItem {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.25rem;
+  box-shadow: $watchListItemShadow;
+  color: rgba(0, 0, 0, 0.36);
+  cursor: pointer;
+
+  transition: background 0.2s ease-in-out;
+  &:hover {
+    background: rgba(0, 0, 0, 0.02);
+  }
+}
+
+.watchListItemActive {
+  color: $secondary;
+}
+
+@media only screen and (max-width: 768px) {
+  .watchList {
+    height: auto;
+    flex-direction: row;
+    justify-content: start;
+    overflow-x: auto;
+    padding: 0.5rem;
+
+    position: sticky;
+    top: 0;
+
+    // hide scroll-bar
+
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .watchListItem {
+    min-width: 120px;
+  }
+}

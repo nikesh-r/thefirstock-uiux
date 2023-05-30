@@ -1,0 +1,77 @@
+@import "./variables.module.scss";
+
+.stocksList {
+  height: 100%;
+  padding: 0rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 1.5rem;
+}
+
+.stocksListItem {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  &:hover {
+    background: rgba(0, 0, 0, 0.02);
+  }
+
+  border-radius: 0.25rem;
+  // box-shadow: $watchListItemShadow;
+  color: rgba(0, 0, 0, 0.36);
+
+  .stockMiniChart {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 0.5rem;
+    box-shadow: $miniChartShadow;
+  }
+
+  .stockDetails {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+
+    .stockHeading {
+      font-family: monospace;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .stockPriceDetails {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      gap: 0.5rem 0;
+
+      .stockPriceChange {
+        width: 96px;
+        border-radius: 0.25rem;
+        padding: 0.25em 0.5rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 0 0.25rem;
+
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+.stockItemActive {
+  background: rgba(0, 0, 0, 0.02);
+}

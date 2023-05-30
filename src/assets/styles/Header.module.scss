@@ -1,0 +1,12 @@
+@import "./variables.module.scss";
+
+.wrapper {
+  width: 100%;
+  height: $headerHeight;
+  padding: 0 1rem;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0 1rem;
+}
